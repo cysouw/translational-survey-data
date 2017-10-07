@@ -1,0 +1,38 @@
+
+\documentclass[11pt]{article}
+
+\usepackage{ifpdf}
+\ifpdf 
+    \usepackage[pdftex]{graphicx}   % to include graphics
+    \pdfcompresslevel=9 
+    \usepackage[pdftex,     % sets up hyperref to use pdftex driver
+            plainpages=false,   % allows page i and 1 to exist in the same document
+            breaklinks=true,    % link texts can be broken at the end of line
+            colorlinks=true,
+            pdftitle=My Document
+            pdfauthor=My Good Self
+           ]{hyperref} 
+    \usepackage{thumbpdf}
+\else 
+    \usepackage{graphicx}       % to include graphics
+    \usepackage{hyperref}       % to simplify the use of \href
+\fi 
+
+\usepackage[style=authoryear]{biblatex}
+\addbibresource{~/Documents/Linguistics/michaellibrary.bib}
+
+\title{Analysing translational survey data through multialignment}
+\author{Michael Cysouw \and Jürg Fleischer}
+\date{\today}
+
+\begin{document}
+  \maketitle
+  \begin{abstract}
+    
+  \end{abstract}
+
+
+
+
+\printbibliography
+\end{document}  
